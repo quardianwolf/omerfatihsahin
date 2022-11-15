@@ -12,7 +12,7 @@
     #hakkimda {
         padding-top: 120px;
         padding-bottom: 80px;
-        background-color: #1e232b;
+        background-color: white;
         background-image: url(../public/assets/images/church3-section-bg2.png);
         background-repeat: no-repeat;
         background-position: left top;
@@ -38,7 +38,7 @@
 #siyah {
     padding-top: 120px;
     padding-bottom: 80px;
-    background-color: #1e232b;
+    background-color: white;
     background-image: url(../public/assets/images/church3-section-bg2.png);
     background-repeat: no-repeat;
     background-position: left top
@@ -117,4 +117,13 @@
     background-image: url(../public/assets/images/church3-section-bg3.png);
     background-repeat: no-repeat;
     background-position: left top
+}
+.hakkimdabuton:hover{
+    color: white !important;
+}
+.hakkimdaicon:hover{
+    color: white !important;
+}
+.tumtedaviButon:hover{
+    color: white !important;
 }

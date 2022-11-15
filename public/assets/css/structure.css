@@ -4541,6 +4541,7 @@ html, body {
 	}
 	#Top_bar.is-sticky .menu>li>a, #Top_bar.is-sticky .menu>li>a span {
 		line-height: 30px;
+		color: white;
 	}
 	#Top_bar.is-sticky .menu>li>a:after {
 		top: auto;

@@ -37,7 +37,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                   <img src={urlFor(image && image[0])} />
                   <div className='sliderBox2'>
                     <h2 className='sliderBaslik'> {name_1} <br /> {name_2} <br /> {name_3} </h2>
-                    <h5 id="slider-1-slide-1-layer-3" className="sliderAciklama" style={{ zIndex: "9" }, { fontFamily: "Roboto" }, { color: "white" }}>{desc}</h5>
+                    <h5 id="slider-1-slide-1-layer-3" className="sliderAciklama" style={{ zIndex: "9" }, { fontFamily: "Roboto" }, { color: "black" }}>{desc}</h5>
                     <a id="slider-1-slide-1-layer-4" className="anasayfaButon" href="{button_link}">{button_text}&nbsp;&nbsp;<i className="icon-right-thin"></i> </a>
                   </div>
                 </SwiperSlide>
@@ -72,7 +72,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                         {name}
                       </h2>
                       <hr className="no_line noline1" style={{ margin: "0 auto 30px auto" }} />
-                      <p style={{ color: "#F5F5F5" }}>
+                      <p style={{ color: "black" }}>
                         {summary}
                       </p>
                       <hr className="no_line noline2" style={{ margin: "0 auto 50px auto" }} />
@@ -83,8 +83,8 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                       </ul>
                       <hr className="no_line noline3" style={{ margin: "0 auto 30px auto" }} />
                       <a className="button has-icon button_right button_size_2" href="hakkimizda" style={{ color: "fff;" }}>
-                        <span className="button_label" style={{ color: "white" }}>Daha Fazla</span>
-                        <span className="button_icon">  <i className="icon-right-thin" style={{ color: "ff!important;" }}></i></span>
+                        <span className="button_label hakkimdabuton" style={{ color: "#ab815a" }}>Daha Fazla</span>
+                        <span className="button_icon"><i className="icon-right-thin hakkimdaicon" style={{ color: "#ab815a!important;" }}></i></span>
                       </a>
                     </div>
                   </>
@@ -136,7 +136,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                             <hr className="no_line" style={{ margin: "0 auto 20px" }} />
                             <div className="desc_wrapper">
                               <div className="desc">
-                                <p style={{ color: "#F5F5F5;" }}>
+                                <p style={{ color: "black" }}>
                                   {name}
                                 </p>
                               </div>
@@ -149,8 +149,8 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                   <div className="col-12">
                     <hr className="no_line" style={{ margin: "0 auto 35px auto" }} />
                   </div>
-                  <div className="col-12"> <a className="button has-icon button_right button_size_2" href="/tr/tedaviler"
-                    style={{ color: "white;" }}><span className="button_label">TÜM TEDAVİLER
+                  <div className="col-12"> <a className="button has-icon button_right button_size_2 tumtedaviButon" href="/tr/tedaviler"
+                    style={{ color: "#ab815a" }}><span className="button_label">TÜM TEDAVİLER
                     </span> <span className="button_icon"><i className="icon-right-thin"
                       style={{ color: "white!important;" }}></i></span></a> </div>
                 </div>

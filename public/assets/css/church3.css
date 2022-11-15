@@ -1974,7 +1974,7 @@ hr.hr_color, .hr_color hr, .hr_dots span {
 	color: #333333;
 }
 #Top_bar .menu>li>a, #Top_bar #menu ul li.submenu .menu-toggle {
-	color: #fff;
+	color: black;
 }
 #Top_bar .menu>li.current-menu-item>a, #Top_bar .menu>li.current_page_item>a, #Top_bar .menu>li.current-menu-parent>a, #Top_bar .menu>li.current-page-parent>a, #Top_bar .menu>li.current-menu-ancestor>a, #Top_bar .menu>li.current-page-ancestor>a, #Top_bar .menu>li.current_page_ancestor>a, #Top_bar .menu>li.hover>a {
 	color: #ab815a;
