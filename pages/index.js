@@ -36,7 +36,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                 <SwiperSlide key={index} data-background={urlFor(image && image[0])} style={{ zIndex: "999" }}>
                   <img src={urlFor(image && image[0])} />
                   <div className='sliderBox2'>
-                    <h2> {name_1} <br /> {name_2} <br /> {name_3} </h2>
+                    <h2 className='sliderBaslik'> {name_1} <br /> {name_2} <br /> {name_3} </h2>
                     <h5 id="slider-1-slide-1-layer-3" className="sliderAciklama" style={{ zIndex: "9" }, { fontFamily: "Roboto" }, { color: "white" }}>{desc}</h5>
                     <a id="slider-1-slide-1-layer-4" className="anasayfaButon" href="{button_link}">{button_text}&nbsp;&nbsp;<i className="icon-right-thin"></i> </a>
                   </div>
@@ -124,11 +124,11 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
 
                     </div>
                   </div>
-                  {tedavilers.map((tedavi, index) => {
-                    const { image, name } = tedavi;
+                  {tedavilers.slice(0,6).map((tedavi, index) => {
+                    const { image, name,slug } = tedavi;
                     return (
                       <div className="col-md-6 text-center" key={index}>
-                        <a href="">
+                        <Link href={`/tedaviler/${slug.current}`}>
                           <div className="icon_box icon_position_top no_border">
                             <div className="image_wrapper"><img
                               src={urlFor(image && image[0])}
@@ -142,7 +142,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                               </div>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     )
                   })}

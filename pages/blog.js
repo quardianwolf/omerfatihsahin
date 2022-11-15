@@ -35,7 +35,7 @@ const blog = ({ blogs }) => {
                               <div className="post-desc">
                                 <div className="post-title">
                                   <h4 className="entry-title">{name}</h4> </div>
-                                <div className="post-excerpt"> {summary} </div>
+                                <div className="post-excerpt" style={{color: "black"}}> {summary} </div>
                               </div>
                             </div>
                           </Link>
