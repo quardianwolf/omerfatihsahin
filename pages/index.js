@@ -37,8 +37,8 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                   <img src={urlFor(image && image[0])} />
                   <div className='sliderBox2'>
                     <h2> {name_1} <br /> {name_2} <br /> {name_3} </h2>
-                    <h5 id="slider-1-slide-1-layer-3" class="sliderAciklama" style={{ zIndex: "9" }, { fontFamily: "Roboto" }, { color: "white" }}>{desc}</h5>
-                    <a id="slider-1-slide-1-layer-4" class="anasayfaButon" href="{button_link}">{button_text}&nbsp;&nbsp;<i class="icon-right-thin"></i> </a>
+                    <h5 id="slider-1-slide-1-layer-3" className="sliderAciklama" style={{ zIndex: "9" }, { fontFamily: "Roboto" }, { color: "white" }}>{desc}</h5>
+                    <a id="slider-1-slide-1-layer-4" className="anasayfaButon" href="{button_link}">{button_text}&nbsp;&nbsp;<i className="icon-right-thin"></i> </a>
                   </div>
                 </SwiperSlide>
               )
@@ -58,7 +58,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                 const { image, summary, name } = hakkimda;
                 return (
                   <>
-                    <div className="col-md-6 kolon1">
+                    <div className="col-md-6 kolon1" key={index}>
                       <div className="image_frame image_item no_link scale-with-grid no_border">
                         <div className="image_wrapper">
                           <img className="scale-with-grid"
@@ -67,7 +67,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6 kolon2" style={{ padding: '70px 3% 0' }}>
+                    <div className="col-md-6 kolon2" key={index} style={{ padding: '70px 3% 0' }}>
                       <h2>
                         {name}
                       </h2>
@@ -84,7 +84,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                       <hr className="no_line noline3" style={{ margin: "0 auto 30px auto" }} />
                       <a className="button has-icon button_right button_size_2" href="hakkimizda" style={{ color: "fff;" }}>
                         <span className="button_label" style={{ color: "white" }}>Daha Fazla</span>
-                        <span className="button_icon">  <i className="icon-right-thin" style={{ color: "ffffff!important;" }}></i></span>
+                        <span className="button_icon">  <i className="icon-right-thin" style={{ color: "ff!important;" }}></i></span>
                       </a>
                     </div>
                   </>
@@ -127,7 +127,7 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                   {tedavilers.map((tedavi, index) => {
                     const { image, name } = tedavi;
                     return (
-                      <div className="col-md-6 text-center">
+                      <div className="col-md-6 text-center" key={index}>
                         <a href="">
                           <div className="icon_box icon_position_top no_border">
                             <div className="image_wrapper"><img
@@ -150,9 +150,9 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                     <hr className="no_line" style={{ margin: "0 auto 35px auto" }} />
                   </div>
                   <div className="col-12"> <a className="button has-icon button_right button_size_2" href="/tr/tedaviler"
-                    style={{ color: "#fff;" }}><span className="button_label">TÜM TEDAVİLER
+                    style={{ color: "white;" }}><span className="button_label">TÜM TEDAVİLER
                     </span> <span className="button_icon"><i className="icon-right-thin"
-                      style={{ color: "#ffffff!important;" }}></i></span></a> </div>
+                      style={{ color: "white!important;" }}></i></span></a> </div>
                 </div>
               </div>
               <div className="col-md-6">
@@ -189,16 +189,16 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                 <hr className="no_line" style={{ margin: "0 auto 40px auto" }} />
               </div>
               <div className="col-12 column_blog">
-                      <div className="column_filters">
-                        <div className="blog_wrapper isotope_wrapper clearfix">
-                       
-                   
-                          <div className="posts_group lm_wrapper col-3 grid" style={{ maxWidth: "100%" }}>
-                          {blogData.map((blog, index) => {
-                  const { image, name, summary, slug } = blog;
-                  return (
-                            <div className="post-item isotope-item clearfix post">
-                              <>
+                <div className="column_filters">
+                  <div className="blog_wrapper isotope_wrapper clearfix">
+
+
+                    <div className="posts_group lm_wrapper col-3 grid" style={{ maxWidth: "100%" }}>
+                      {blogData.map((blog, index) => {
+                        const { image, name, summary, slug } = blog;
+                        return (
+                          <div className="post-item isotope-item clearfix post" key={index}>
+                            <>
                               <Link href={`/blog/${slug.current}`}>
                                 <div className="image_frame post-photo-wrapper scale-with-grid image">
                                   <div className="image_wrapper">
@@ -217,20 +217,20 @@ export default function Home({ tedavilers, sliderData, hakkimdaData, blogData })
                                       </h4>
                                     </div>
                                     <div className="post-excerpt">
-                                      <p style={{color: "black"}}>{summary}</p>
+                                      <p style={{ color: "black" }}>{summary}</p>
                                     </div>
                                   </div>
                                 </div>
-                                </Link>
-                              </>
-                            </div>
-                                    
-                  )
-                })}
+                              </Link>
+                            </>
                           </div>
-                 
-                        </div>
-                      </div>
+
+                        )
+                      })}
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -8,49 +8,47 @@ const ProductDetails = ({ tedavilers, tedaviler, }) => {
 
   return (
     <>
-     <Intro key={_id} name={name} slug={slug} />
-    <div id="Content">
-      <div className="content_wrapper clearfix medyacon">
-        <div className="sections_group">
-          <div id="post-947" className="post-947 post  format-standard has-post-thumbnail  category-priest">
-
-
-            <div className="post-wrapper-content">
-              <div className="entry-content">
-                <div className="section the_content has_content">
-                  <div className="section_wrapper">
-                    <div className="the_content_wrapper">
-                      <h5>{name}</h5>
-                      <p>
-                        {content.map((con, i) => {
-                          return (
-                            <>
-                              {con.children.map((child, i) => {
-                                return (
-                                  <>
-                                    {child.text}
-                                  </>
-                                )
-                              })}
-                            </>
-                          )
-                        })}
-                      </p>
+      <Intro key={_id} name={name} slug={slug} />
+      <div id="Content">
+        <div className="content_wrapper clearfix medyacon">
+          <div className="sections_group">
+            <div id="post-947" className="post-947 post  format-standard has-post-thumbnail  category-priest">
+              <div className="post-wrapper-content">
+                <div className="entry-content">
+                  <div className="section the_content has_content">
+                    <div className="section_wrapper">
+                      <div className="the_content_wrapper">
+                        <h5>{name}</h5>
+                        <p>
+                          {content.map((con, i) => {
+                            return (
+                              <div key={i}>
+                                {con.children.map((child, i) => {
+                                  return (
+                                    <div key={i}>
+                                      {child.text}
+                                    </div>
+                                  )
+                                })}
+                              </div>
+                            )
+                          })}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="section section-post-footer">
-                <div className="section_wrapper clearfix">
+                <div className="section section-post-footer">
+                  <div className="section_wrapper clearfix">
 
-                  <div className="column one post-pager"></div>
+                    <div className="column one post-pager"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   )
 }
