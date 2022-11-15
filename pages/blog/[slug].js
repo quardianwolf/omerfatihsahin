@@ -1,5 +1,6 @@
 import { IntroBlog } from '../../structure';
 
+import Image from 'next/image'
 import { client, urlFor } from '../../lib/client';
 
 const BlogDetails = ({ blogs, blog, }) => {

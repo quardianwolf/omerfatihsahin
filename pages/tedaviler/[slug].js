@@ -1,4 +1,5 @@
 import { Intro } from '../../structure';
+import Image from 'next/image'
 
 import { client, urlFor } from '../../lib/client';
 
