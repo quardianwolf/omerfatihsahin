@@ -1,0 +1,120 @@
+.sliderAciklama {
+    z-index: 9;
+    font-family: Roboto;
+    color: white;
+}
+
+.sliderBox {
+    line-height: 87px;
+}
+
+#hakkimdaa {
+    #hakkimda {
+        padding-top: 120px;
+        padding-bottom: 80px;
+        background-color: #1e232b;
+        background-image: url(../public/assets/images/church3-section-bg2.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+
+        .kolon2 {
+            padding: 70px 3% 0;
+
+            .noline1 {
+                margin: 0 auto 30px auto;
+            }
+
+            .noline2 {
+                margin: 0 auto 50px auto;
+            }
+
+            .noline3 {
+                margin: 0 auto 30px auto;
+            }
+        }
+    }
+}
+
+#siyah {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #1e232b;
+    background-image: url(../public/assets/images/church3-section-bg2.png);
+    background-repeat: no-repeat;
+    background-position: left top
+}
+
+#haberr {
+    padding-top: 120px;
+    padding-bottom: 80px
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    z-index: 999;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 1920px;
+    height: 1080px;
+    z-index: 49 !important;
+    position: absolute;
+
+}
+
+.sliderBox2 {
+    position: relative;
+    right: 50px;
+    z-index: 50;
+}
+
+.hakkimizdaSayfa {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #e0dad2;
+    background-image: url(../public/assets/images/church3-section-bg4.png);
+    background-repeat: no-repeat;
+    background-position: right top
+}
+
+.footer-logo {
+    height: 100px !important;
+    width: 244px !important;
+    padding-bottom: 38px;
+}
+
+.introSec {
+    background-size: cover;
+    background-image: url(../public/assets/images/church3-section-bg3.png)
+}
+
+.iletisimSayfa {
+    padding-bottom: 65px;
+    background-color: #1e232b;
+    background-image: url(../public/assets/images/church3-section-bg3.png);
+    background-repeat: no-repeat;
+    background-position: left top
+}
