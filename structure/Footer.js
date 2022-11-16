@@ -1,34 +1,35 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ( { iletisimData }) => {
   return (
     <>
     <footer id="Footer" className="clearfix">
 			<div className="container">
 				<div className="row">
+					<>
 					<div className="col-12">
 						<hr className="no_line" style={{margin:"0 auto 100px"}}/> </div>
-					<div className="col-md-4 text-center">
-						<h4>SOSYAL MEDYA</h4>
+					<div className="col-md-4 text-center">						
+						<h4>SOSYAL MEDYA</h4>				
 						<hr className="no_line" style={{margin:" 0 auto 10px auto"}}/>
-						<a href="<?=$instagram;?>"> İnstagram <i className="icon-right-thin"></i> <i className="icon-instagram"></i> </a>
-						<a href="<?=$facebook;?>"><br/> Facebook <i className="icon-right-thin"></i> <i className="icon-facebook"></i></a>
-					</div>
-					<div className="col-md-4 text-center">
-						
+						<a href="https://www.instagram.com/dromerfatih/" > Instagram<i className="icon-right-thin"></i> <i className="icon-instagram"></i> </a>
+						<a href="https://www.facebook.com/uzmdromerfatihsahin/"><br/> Facebook <i className="icon-right-thin"></i> <i className="icon-facebook"></i></a>					
+						</div>
+					<div className="col-md-4 text-center">						
 						<div className="image_frame image_item no_link scale-with-grid aligncenter no_border">
-							<div className="image_wrapper"><img className="scale-with-grid footer-logo" src='/assets/images/logoomer1.png' alt="logo" width="94" height="182"/> </div>
+							<div className="image_wrapper"><img className="scale-with-grid footer-logo" src='/assets/images/omersticky.png' alt="logo" width="94" height="182"/> </div>
 						</div>
 					</div>
 					<div className="col-md-4 text-center">
 						<h4>İLETİŞİM BİLGİLERİ</h4>
 						<hr className="no_line" style={{margin:" 0 auto 10px auto"}}/>
-						<p> adres </p>
+						<p> Harbiye Mah Maçka Cd No: 1 Feza Aprt Kat:4, 34367 Şişli/İstanbul</p>
 						<hr className="no_line" style={{margin:" 0 auto 10px auto"}}/>
-							<br/> Eposta: <a href="mailto:"></a>
+							
 					</div>
 					<div className="col-12">
 						<hr className="no_line" style={{margin:"0 auto 80px"}}/> </div>
+						</>
 				</div>
 			</div>
 			<div className="footer_copy">
@@ -50,5 +51,20 @@ const Footer = () => {
   </>
   )
 }
+
+
+export const getServerSideProps = async () => {
+
+
+	const iletisimQuery = '*[_type == "iletisim"]';
+	const iletisimData = await client.fetch(iletisimQuery);
+
+
+
+	return {
+		props: { iletisimData }
+	}
+}
+
 
 export default Footer

@@ -112,8 +112,8 @@
 }
 
 .iletisimSayfa {
-    padding-bottom: 65px;
-    background-color: #1e232b;
+    padding-bottom: 150px;
+    background-color: #fee3d4;
     background-image: url(../public/assets/images/church3-section-bg3.png);
     background-repeat: no-repeat;
     background-position: left top
@@ -126,4 +126,7 @@
 }
 .tumtedaviButon:hover{
     color: white !important;
+}
+.footerHidden{
+    display: none;
 }

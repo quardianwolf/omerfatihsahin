@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { client, urlFor } from '../lib/client';
 
+import { Footer } from '../structure';
+
 const iletisim = ({ iletisimData }) => {
 
 	const [formData, setFormData] = useState({ name: '', email: '', message: '', subject: '', });
@@ -38,7 +40,7 @@ const iletisim = ({ iletisimData }) => {
 			<div className="section iletisimSayfa" >
 				<div className="mfn-drag-helper placeholder-wrap"></div>
 			</div>
-			<div className="section mcb-section no-margin-v equal-height-wrap bg-cover" style={{ backgroundColor: "#1e232b" }}>
+			<div className="section mcb-section no-margin-v equal-height-wrap bg-cover" style={{ backgroundColor: "#1e232b", paddingTop: "107px" }}>
 				<div className="container">
 					<div className="row">
 						{iletisimData.map((iletisimm, i) => {
@@ -109,7 +111,11 @@ const iletisim = ({ iletisimData }) => {
 				</div>
 			</div>
 		</>
+	
+
+		
 	)
+	
 }
 
 export const getServerSideProps = async () => {

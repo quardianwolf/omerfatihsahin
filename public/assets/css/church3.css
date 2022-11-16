@@ -1836,10 +1836,10 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 	}
 }
 #Header_wrapper, #Intro {
-	background-color: #1e232b;
+	background-color:#fee3d4 !important;
 }
 #Subheader {
-	background-color: rgba(30, 35, 43, 1);
+	background-color: #fee3d4 !important;
 }
 .header-classic #Action_bar, .header-fixed #Action_bar, .header-plain #Action_bar, .header-split #Action_bar, .header-stack #Action_bar {
 	background-color: #292b33;
@@ -3423,7 +3423,7 @@ a, a:visited, a:focus {
 /* Light */
 
 #Intro .intro-title {
-	color: #fff
+	color: black;
 }
 #Intro .intro-meta, #Intro .intro-meta a {
 	color: rgba(255, 255, 255, .7)
