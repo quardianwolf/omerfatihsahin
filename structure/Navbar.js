@@ -11,10 +11,10 @@ const Navbar = () => {
                             <div className="top_bar_left clearfix">
                                 <div className="logo">
                                     <Link id="logo" href="/" title="Dr. Kubra Esen" data-height="132" data-padding="40">
-                                        <img className="logo-main scale-with-grid" src="/assets/images/logoomer.png" data-retina="/assets/images/logoomer.png" data-height="132" alt="church3" />
-                                        <img className="logo-sticky scale-with-grid" src="/assets/images/logoomer.png" data-retina="/assets/images/logoomer.png" data-height="132" alt="church3" />
-                                        <img className="logo-mobile scale-with-grid" src="/assets/images/logoomer.png" data-retina="/assets/images/logoomer.png" data-height="132" alt="church3" />
-                                        <img className="logo-mobile-sticky scale-with-grid" src="/assets/images/logoomer.png" data-retina="/assets/images/logoomer.png" data-height="132" alt="church3" />
+                                        <img className="logo-main scale-with-grid" src="/assets/images/logoomer1.png" data-retina="/assets/images/logoomer1.png" data-height="132" alt="church3" />
+                                        <img className="logo-sticky scale-with-grid" src="/assets/images/logoomer1.png" data-retina="/assets/images/logoomer1.png" data-height="132" alt="church3" />
+                                        <img className="logo-mobile scale-with-grid" src="/assets/images/logoomer1.png" data-retina="/assets/images/logoomer1.png" data-height="132" alt="church3" />
+                                        <img className="logo-mobile-sticky scale-with-grid" src="/assets/images/logoomer1.png" data-retina="/assets/images/logoomer1.png" data-height="132" alt="church3" />
                                     </Link>
                                 </div>
                                 <div className="menu_wrapper">

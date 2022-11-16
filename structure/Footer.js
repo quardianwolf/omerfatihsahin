@@ -17,7 +17,7 @@ const Footer = () => {
 					<div className="col-md-4 text-center">
 						
 						<div className="image_frame image_item no_link scale-with-grid aligncenter no_border">
-							<div className="image_wrapper"><img className="scale-with-grid footer-logo" src='/assets/images/logoomer.png' alt="logo" width="94" height="182"/> </div>
+							<div className="image_wrapper"><img className="scale-with-grid footer-logo" src='/assets/images/logoomer1.png' alt="logo" width="94" height="182"/> </div>
 						</div>
 					</div>
 					<div className="col-md-4 text-center">
